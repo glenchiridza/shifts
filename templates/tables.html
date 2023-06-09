@@ -1,0 +1,60 @@
+<style>
+
+
+table, tbody, th, td {
+  display: flex;
+  min-width:13vw;
+}
+
+</style>
+<!--{% for day in date_list%}-->
+
+<!--                                            {% if 'Thu' in day %}-->
+<!--                                                kkk its there {{day}}-->
+<!--                                                {% for shift in s3 %}-->
+<!--                                                    {{shift[2]}}-->
+<!--                                                {% endfor %}-->
+<!--                                            {% endif %}-->
+<!--                                            {% endfor %}-->
+<div class="card-body">
+<div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <th>Date</th>
+                                            {% for day in date_list%}
+                                            <td>{{day}}</td>
+                                            {% endfor %}
+                                        </tr>
+
+                                        <tr>
+                                            <th>6:00 - 15:00 (shift 1)</th>
+
+                                        {% for shift in s1 %}
+                                            <td>{{shift[2]}} </td>
+                                        {% endfor %}
+                                        </tr>
+
+                                        <tr>
+
+                                            <th>8:00 - 17:00 (shift 2)</th>
+
+                                        {% for shift in s2 %}
+                                            <td>{{shift[2]}} </td>
+                                        {% endfor %}
+
+                                        </tr>
+
+                                        <tr>
+                                            <th>11:00 - 20:00 (shift 3)</th>
+
+                                    {% for shift in s3 %}
+                                            <td>{{shift[2]}} </td>
+                                    {% endfor %}
+                                        </tr>
+                                    </tbody>
+
+
+                                </table>
+</div>
+</div>

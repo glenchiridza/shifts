@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shifts</title>
+
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+     <link href="{{ url_for('static', filename='assets/vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+
+    <h1> shifts</h1>
+
+
+    {% include 'tables.html' %}
+
+
+    </div>
+
+
+        <!-- Bootstrap core JavaScript-->
+        <script src="{{ url_for('static', filename='assets/vendor/jquery/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='assets/vendor/bootstrap5/js/bootstrap.bundle.min.js') }}"></script>
+    <!--table js-->
+     <script src="{{ url_for('static', filename='ssets/vendor/datatables/jquery.dataTables.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='assets/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='assets/js/demo/datatables-demo.js') }}"></script>
+
+    <!--end table js-->
+
+</body>
+</html>
